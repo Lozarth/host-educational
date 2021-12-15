@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tanuki Sunset</title>
+    <link rel="shortcut icon" href="55favicon.ico">
+    <link rel="stylesheet" href="zombies.css">
+    <script src="55UnityProgress.js"></script>
+    <script src="tanukuUnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "tanukibuild.json", {onProgress: UnityProgress});
+    </script>
+</head>
+<body>
+<div class="webgl-content">
+    <div id="gameContainer" style="width: 980px; height: 668px"></div>
+</div>
+
+</body>
+</html>
