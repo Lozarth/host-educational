@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+	<script type="text/javascript">
+        function check()
+        {
+            if (navigator.platform === "CrOS") {
+                console.log("chrome");
+            } else {
+                window.location.replace("https://www2.montgomeryschoolsmd.org/schools/newportmillms/");
+            }
+        }
+        window.onpaint = check();
+    </script>
 	<meta charset="utf-8">
 	
 	<title>Newport Mill MS</title>
@@ -63,14 +73,6 @@
 		}
 
 	</style>
-	<script type="text/javascript">
-        console.log(navigator)
-        if (navigator.platform === "CrOS") {
-            console.log("This is ChromeOS. You're awesome!");
-        } else {
-            window.location.replace("https://www2.montgomeryschoolsmd.org/schools/newportmillms/");
-        }
-    </script>
 	
 </head>
 <body>

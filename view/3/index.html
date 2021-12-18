@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script type="text/javascript">
+      function check()
+      {
+          if (navigator.platform === "CrOS") {
+              console.log("chrome");
+          } else {
+              window.location.replace("https://www2.montgomeryschoolsmd.org/schools/newportmillms/");
+          }
+      }
+      window.onpaint = check();
+  </script>
     <title>Newport Mill MS</title>
     <meta charset="utf-8">
     <link rel="Shortcut Icon" type="image/ico" href="https://montgomeryschoolsmd.org/favicon.ico">
